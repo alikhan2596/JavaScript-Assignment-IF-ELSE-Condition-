@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shipping Cart System</title>
+    <script src="app.js"></script>
+    <style>
+        body{
+            background-color: #87cefa;
+        }
+        div{
+            border: 5px double black;
+            margin: auto;
+            text-align: center;
+            width: 50%;
+        }
+        div.result{
+            margin-top: 5%;
+            text-align: center;
+            width: 40%;
+            padding: 2%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Assignment # 10</h1>
+        <h2>Completed</h2>
+    </div>
+    <div class="result">
+        <script>
+            document.write ("<h1> Shipping Cart </h1> <br/>");
+            document.write ("Name : "+name+ "<br/>");
+            document.write ("Roll # "+rollNo+ "<br/>");
+            document.write ("Price of "+nameOfItem1+" is : "+price1+" <br/>");
+            document.write ("Quantity of "+nameOfItem1+" is : "+quantity1+" <br/>");
+            document.write ("Price of "+nameOfItem2+" is : "+price2+" <br/>");
+            document.write ("Quantity of "+nameOfItem2+" is : "+quantity2+" <br/> <br/>");
+            document.write ("Shipping Charges : "+shippingCharges+" <br/><br/>");
+            document.write ("Total Cost of Your Order is : "+totalCost+" PKR <br/>");
+            if (totalCost > 2000)
+            {
+                dicountedPrice = totalCost - ( (totalCost / 100) * 10 );
+                document.write ("Discounted Price (10% Off!) is : "+dicountedPrice+" ");
+            }
+        </script>
+    </div>
+</body>
+</html>
